@@ -1,6 +1,26 @@
-# AWS Custom VPC + Nginx Project
+# AWS VPC and Nginx Project
 
-## What I Built<img width="1366" height="768" alt="vpc-test-security-group" src="https://github.com/user-attachments/assets/7e0b5a69-c90b-49ab-9fff-d3931337a2f6" />
+## What I Built
+I created a custom VPC on AWS with public 
+and private subnets. I launched an EC2 
+instance, attached an Elastic IP, SSH'd 
+into the server and installed Nginx.
+
+## Services I Use
+- Amazon VPC
+- Amazon EC2
+- Elastic IP
+- Internet Gateway
+- Route Tables
+- Nginx
+
+## What I Learned
+- How VPC networking works
+- Difference between public and private subnets
+- How to configure Internet Gateway and Route Tables
+- How to deploy a web server on EC2
+- 
+<img width="1366" height="768" alt="vpc-test-security-group" src="https://github.com/user-attachments/assets/7e0b5a69-c90b-49ab-9fff-d3931337a2f6" />
 <img width="1366" height="768" alt="live-website-on-server" src="https://github.com/user-attachments/assets/9229bb9c-93b1-40b5-966f-89b998b47e26" />
 <img width="1366" height="768" alt="nginx-status-check" src="https://github.com/user-attachments/assets/a5e8aa4d-2bf1-44b2-b8c0-f4d103df8440" />
 <img width="1366" height="768" alt="nginx-installed-on-virtual-server" src="https://github.com/user-attachments/assets/1933a48a-5308-483e-9405-15b04edcfb6b" />
@@ -13,29 +33,5 @@
 <img width="1366" height="768" alt="my-public-subnet" src="https://github.com/user-attachments/assets/ada94643-99d0-4096-867a-78d700d123f4" />
 <img width="1366" height="768" alt="my-cutom-vpc" src="https://github.com/user-attachments/assets/63ca65fc-ef73-491c-8197-87639eb91253" />
 
-Deployed a live Nginx web server on AWS EC2
-inside a custom VPC built from scratch.
 
-## Architecture
-- Custom VPC (10.0.0.0/16)
-- Public Subnet (10.0.1.0/24)
-- Private Subnet (10.0.2.0/24)
-- Internet Gateway
-- Route Tables
-- EC2 instance running Nginx
-- Elastic IP for permanent address
-- Security Groups
 
-## Services Used
-Amazon VPC, EC2, Elastic IP, 
-Security Groups, Nginx
-
-## Steps I Followed
-1. Created custom VPC
-2. Created public and private subnets
-3. Attached Internet Gateway
-4. Configured Route Tables
-5. Launched EC2 in public subnet
-6. Allocated and attached Elastic IP
-7. SSH'd into server
-8. Installed and configured Nginx
